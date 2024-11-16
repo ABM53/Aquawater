@@ -17,25 +17,35 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #007bff;">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <!-- "Water Tracker" on the left -->
-        <a class="navbar-brand" href="index.html">Water Tracker</a>
+        <a class="navbar-brand" href="index.html">
+          <i class="fas fa-tint"></i> Water Tracker
+        </a>
   
-        <!-- Navigation items on the right -->
-        <div class="navbar-nav ms-auto">
-          <ul class="navbar-nav">
+        <!-- Button for responsive toggling -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Navigation items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link btn-nav" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="page1.html">User Info</a>
+              <a class="nav-link btn-nav" href="page1.html">User Info</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="page2.html">Water Benefits</a>
+              <a class="nav-link btn-nav" href="page2.html">Water Benefits</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="page3.html">Significance Of Water</a>
+              <a class="nav-link btn-nav" href="page3.html">Significance Of Water</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-nav" href="page4.html">Quizes</a>
             </li>
           </ul>
         </div>
@@ -44,9 +54,11 @@
   </header>
   
   
+  
+  
+  
 
-
-
+<main>
   <!-- Navigation Bar -->
   <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
@@ -75,10 +87,11 @@
 
 
   <!-- Main Section -->
+  
   <div class="container py-5">
     <div class="row justify-content-center text-center">
       <div class="col-md-8">
-        <h1 class="display-4 mb-4">Welcome to the Water Intake Tracker</h1>
+        <h1 class="text-white">Welcome to the Water Intake Tracker</h1>
         <p class="lead mb-4">Track your daily water intake and stay hydrated. Get personalized reminders and discover the benefits of drinking water.</p>
         
 
@@ -88,12 +101,12 @@
         
             <!-- Sliding Quotes Section -->
             <div id="quote-container" class="mt-4 text-center">
-              <h3 id="quote" class="quote"></h3>
+              <h3 id="quote" class="quote text-white" ></h3>
             </div>
+          </main>
 
-  <footer class="bg-dark text-white text-center py-4">
+  <footer>
     <p>&copy; 2024 Water Tracker | All Rights Reserved</p>
-    
   </footer>
 
 

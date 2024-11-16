@@ -6,14 +6,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const correctAnswers = {
       q1: 'b',  // 2-3 liters
       q2: 'a',  // Improved digestion
-      q3: 'b'   // Drinking water in small sips throughout the day
+      q3: 'b',   // Drinking water in small sips throughout the day
+      q4: 'b'   // Drinking water in small sips throughout the day
+     
     };
 
     let score = 0;
     let feedbackHTML = '';
 
     // Check the selected answers for each question
-    for (let i = 1; i <= 3; i++) {
+    for (let i = 1; i <= 4; i++) {
       const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
       if (selectedAnswer) {
         // Check if the answer is correct
@@ -29,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Display the result
-    const resultMessage = `You answered ${score} out of 3 questions correctly.`;
+    const resultMessage = `You answered ${score} out of 4 questions correctly.`;
     document.getElementById("score").textContent = resultMessage;
     document.getElementById("feedback").innerHTML = feedbackHTML;
 
