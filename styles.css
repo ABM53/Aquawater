@@ -266,3 +266,32 @@ header .navbar-nav .nav-link:hover {
   color: #ccc; /* Change color when hovering */
 }
 
+/* Ensure navbar is full width and properly aligned */
+@media (max-width: 767px) {
+  .navbar-nav {
+    text-align: right; /* Align items to the right on smaller screens */
+  }
+
+  .navbar-brand {
+    flex-grow: 1; /* Push the brand to the left on mobile */
+  }
+}
+
+/* Ensure the "Water Tracker" is centered on mobile */
+@media (max-width: 767px) {
+  .navbar-brand {
+    text-align: center;  /* Centering the brand on mobile */
+    width: 100%; /* Make sure the brand takes up full width on mobile */
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center;  /* Center navigation links below the brand */
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;  /* Make the nav items take full width */
+  }
+}
+
+
