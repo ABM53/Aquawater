@@ -154,7 +154,7 @@ body {
     font-size: 1.5rem;
     color: #4CAF50;
     font-style: italic;
-    animation: slideIn 5s infinite alternate;
+    /*animation: slideIn 5s infinite alternate;*/
   }
   
   /* Animation for Sliding Quotes */
@@ -174,10 +174,43 @@ body {
     padding: 10px;
     margin: 10px 0;
     transition: all 1s ease;
+    animation: slideIn 5s infinite alternate
   }
   
   /* Button Styling */
   .btn {
     margin: 10px;
+  }
+  
+
+
+  .water-in-quran
+
+
+  .quiz-box {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quiz-box h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  #feedback {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  #feedback p {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
   }
   

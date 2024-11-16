@@ -4,18 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Water Benefits Quiz</title>
-  
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  <!-- Custom CSS -->
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
-
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Water Tracker</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,96 +33,70 @@
         </ul>
       </div>
     </div>
-  </nav>
+</nav>
 
+<!-- Quiz Container -->
+<div class="container mt-5" id="quizContainer">
+  <h2 class="mb-4">Water Intake Benefits Quiz</h2>
 
+  <!-- Quiz Questions and Options -->
+  <div class="quiz-box p-4 mb-4" style="border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
+    <h4>Answer the following questions:</h4>
 
-
-
-  <div class="container py-5">
-    <h1 class="text-center">Water Benefits Quiz</h1>
-    <p class="lead text-center">Test your knowledge about the benefits of drinking water!</p>
-
-    <!-- Quiz Content -->
-    <div id="quizContainer">
-      <form id="quizForm">
-        <div class="question" id="question1">
-          <h4>1. How much water should an average adult drink per day?</h4>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="q1" value="a" id="q1a">
-            <label class="form-check-label" for="q1a">1-1.5 liters</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="q1" value="b" id="q1b">
-            <label class="form-check-label" for="q1b">2-3 liters</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="q1" value="c" id="q1c">
-            <label class="form-check-label" for="q1c">4-5 liters</label>
-          </div>
+    <form id="quizForm">
+      <div class="mb-3">
+        <label for="q1" class="form-label">How much water should an average person drink daily?</label>
+        <div>
+          <input type="radio" name="q1" value="a" id="q1a"> <label for="q1a">1-2 liters</label><br>
+          <input type="radio" name="q1" value="b" id="q1b"> <label for="q1b">2-3 liters</label><br>
+          <input type="radio" name="q1" value="c" id="q1c"> <label for="q1c">3-4 liters</label>
         </div>
-
-        <div class="question" id="question2">
-          <h4>2. Which of the following is a key benefit of drinking water?</h4>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="q2" value="a" id="q2a">
-            <label class="form-check-label" for="q2a">Improved digestion</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="q2" value="b" id="q2b">
-            <label class="form-check-label" for="q2b">Weight gain</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="q2" value="c" id="q2c">
-            <label class="form-check-label" for="q2c">Chronic fatigue</label>
-          </div>
-        </div>
-
-        <div class="question" id="question3">
-          <h4>3. Which of the following is an important hydration tip?</h4>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="q3" value="a" id="q3a">
-            <label class="form-check-label" for="q3a">Drinking caffeinated drinks</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="q3" value="b" id="q3b">
-            <label class="form-check-label" for="q3b">Drinking water in small sips throughout the day</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="q3" value="c" id="q3c">
-            <label class="form-check-label" for="q3c">Consuming high-sugar beverages</label>
-          </div>
-        </div>
-
-        <!-- Submit Button -->
-        <div class="mt-4 text-center">
-          <button type="submit" class="btn btn-primary">Submit Answers</button>
-        </div>
-      </form>
-
-      <!-- Quiz Results -->
-      <div id="quizResults" class="mt-4" style="display:none;">
-        <h3>Quiz Results:</h3>
-        <p id="score"></p>
-        <a href="index.html" class="btn btn-primary mt-4">Back to Home</a>
-        <a href="page1.html" class="btn btn-secondary mt-4">Go to User Info</a>
-        <a href="page3.html" class="btn btn-success mt-4">Go to Hydration Tips</a>
       </div>
-    </div>
+
+      <div class="mb-3">
+        <label for="q2" class="form-label">What is one of the benefits of drinking water?</label>
+        <div>
+          <input type="radio" name="q2" value="a" id="q2a"> <label for="q2a">Improved digestion</label><br>
+          <input type="radio" name="q2" value="b" id="q2b"> <label for="q2b">Weight loss</label><br>
+          <input type="radio" name="q2" value="c" id="q2c"> <label for="q2c">Better sleep</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="q3" class="form-label">What is the best way to drink water throughout the day?</label>
+        <div>
+          <input type="radio" name="q3" value="a" id="q3a"> <label for="q3a">Drink large amounts at once</label><br>
+          <input type="radio" name="q3" value="b" id="q3b"> <label for="q3b">Drink water in small sips throughout the day</label><br>
+          <input type="radio" name="q3" value="c" id="q3c"> <label for="q3c">Drink only when thirsty</label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
   </div>
+</div>
 
-
-  <footer class="bg-dark text-white text-center py-4">
-    <p>&copy; 2024 Water Tracker | All Rights Reserved</p>
-  </footer>
-
-
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<!-- Quiz Results Section -->
+<div id="quizResults" class="container mt-5" style="display:none;">
+  <h3>Quiz Results:</h3>
+  <p id="score"></p>
   
-  <!-- Custom JS -->
-  <script src="quiz.js"></script>
+  <!-- Feedback for each question -->
+  <div id="feedback"></div>
+
+  <!-- Navigation Buttons -->
+  <a href="index.html" class="btn btn-primary mt-4">Back to Home</a>
+  <a href="page1.html" class="btn btn-secondary mt-4">Go to User Info</a>
+  <a href="page3.html" class="btn btn-success mt-4">Go to Hydration Tips</a>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <p>&copy; 2024 Water Tracker | All Rights Reserved</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="quiz.js"></script>
+
 </body>
 </html>
