@@ -41,9 +41,7 @@ h2 {
   color: white;
 }
 
-h4 {
-  color: white;
-}
+
 
 
 ul{
@@ -181,7 +179,7 @@ body {
 
 /* Apply background image to the entire page */
 body {
-  background-image: url(images/background.jpg); /* Replace with your image path */
+  background-image: url(background.jpg); /* Replace with your image path */
   background-size: cover;  /* Makes the background cover the whole page */
   background-position: center;  /* Centers the image */
   background-repeat: no-repeat; /* Ensures the background does not repeat */
